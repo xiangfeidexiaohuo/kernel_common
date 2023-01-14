@@ -1775,6 +1775,7 @@ extern struct pid *cad_pid;
 #define PF_MEMALLOC_PIN		0x10000000	/* Allocation context constrained to zones which allow long term pinning. */
 #define PF__HOLE__20000000	0x20000000
 #define PF__HOLE__40000000	0x40000000
+#define PF_PERF_CRITICAL	0x20000000	/* Thread is performance-critical */
 #define PF_SUSPEND_TASK		0x80000000      /* This thread called freeze_processes() and should not be frozen */
 
 /*
