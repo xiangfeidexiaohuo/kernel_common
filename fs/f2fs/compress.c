@@ -1944,7 +1944,7 @@ void f2fs_cache_compressed_page(struct f2fs_sb_info *sbi, struct page *page,
 
 	set_page_private_data(cpage, ino);
 
-	memcpy(page_address(cpage), page_address(page), PAGE_SIZE);
+	copy_page(page_address(cpage), page_address(page));
 	SetPageUptodate(cpage);
 	f2fs_put_page(cpage, 1);
 }
